@@ -18,8 +18,8 @@ public class Constants {
     public static FollowerConstants followerConstants = new FollowerConstants();
 
     public static PinpointConstants localizeConstants = new PinpointConstants()
-            .forwardPodY(-148.675)
-            .strafePodX(-23.675)
+            .forwardPodY(RobotConstants.forwardY)
+            .strafePodX(RobotConstants.strafeX)
             .distanceUnit(DistanceUnit.MM)
             .hardwareMapName(RobotConstants.pinpointName)
             .encoderResolution(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD)

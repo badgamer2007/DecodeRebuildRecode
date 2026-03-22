@@ -22,6 +22,9 @@ public class RobotConstants {
     // Swerve Globals
     public static double analogMax = 3.3;
     public static double driveServoCaching = 0.01;
+    public static double forwardY = -148.675;
+    public static double strafeX = -23.675;
+
 
     // Front Right Swerve
     public static String fR_motorName = "fr_motor";
