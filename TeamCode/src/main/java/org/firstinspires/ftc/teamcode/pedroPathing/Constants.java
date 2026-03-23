@@ -32,31 +32,33 @@ public class Constants {
             .useBrakeModeInTeleOp(true)
             .maxPower(0.8);
 
+    private static double  twwb = RobotConstants.twwb;
+
     private static CoaxialPod leftFront(HardwareMap hardwareMap){
         CoaxialPod pod = new CoaxialPod(hardwareMap, RobotConstants.fL_motorName, RobotConstants.fL_servoName, RobotConstants.fL_encoderName, RobotConstants.fL_PID,
-                RobotConstants.fL_motorDirection, RobotConstants.fL_servoDirection, RobotConstants.fL_offset, new Pose(133.675, 133.675),
-                0, RobotConstants.analogMax, RobotConstants.fL_analogReverse);
+                RobotConstants.fL_motorDirection, RobotConstants.fL_servoDirection, RobotConstants.fL_offset, new Pose(twwb, twwb),
+                RobotConstants.fL_analogMin, RobotConstants.fL_analogMax, RobotConstants.fL_analogReverse);
         pod.setServoCachingThreshold(RobotConstants.driveServoCaching); return pod;
     }
 
     private static CoaxialPod rightFront(HardwareMap hardwareMap){
         CoaxialPod pod = new CoaxialPod(hardwareMap, RobotConstants.fR_motorName, RobotConstants.fR_servoName, RobotConstants.fR_encoderName, RobotConstants.fR_PID,
-                RobotConstants.fR_motorDirection, RobotConstants.fR_servoDirection, RobotConstants.fR_offset, new Pose(133.675, -133.675),
-                0, RobotConstants.analogMax, RobotConstants.fR_analogReverse);
+                RobotConstants.fR_motorDirection, RobotConstants.fR_servoDirection, RobotConstants.fR_offset, new Pose(twwb, -twwb),
+                RobotConstants.fR_analogMin, RobotConstants.fR_analogMax, RobotConstants.fR_analogReverse);
         pod.setServoCachingThreshold(RobotConstants.driveServoCaching); return pod;
     }
 
     private static CoaxialPod leftBack(HardwareMap hardwareMap){
         CoaxialPod pod = new CoaxialPod(hardwareMap, RobotConstants.bL_motorName, RobotConstants.bL_servoName, RobotConstants.bL_encoderName, RobotConstants.bL_PID,
-                RobotConstants.bL_motorDirection, RobotConstants.bL_servoDirection, RobotConstants.bL_offset, new Pose(-133.675, 133.675),
-                0, RobotConstants.analogMax, RobotConstants.bL_analogReverse);
+                RobotConstants.bL_motorDirection, RobotConstants.bL_servoDirection, RobotConstants.bL_offset, new Pose(-twwb, twwb),
+                RobotConstants.bL_analogMin, RobotConstants.bL_analogMax, RobotConstants.bL_analogReverse);
         pod.setServoCachingThreshold(RobotConstants.driveServoCaching); return pod;
     }
 
     private static CoaxialPod rightBack(HardwareMap hardwareMap){
         CoaxialPod pod = new CoaxialPod(hardwareMap, RobotConstants.bR_motorName, RobotConstants.bR_servoName, RobotConstants.bR_encoderName, RobotConstants.bR_PID,
-                RobotConstants.bR_motorDirection, RobotConstants.bR_servoDirection, RobotConstants.bR_offset, new Pose(-133.675, -133.675),
-                0, RobotConstants.analogMax, RobotConstants.bR_analogReverse);
+                RobotConstants.bR_motorDirection, RobotConstants.bR_servoDirection, RobotConstants.bR_offset, new Pose(-twwb, -twwb),
+                RobotConstants.bR_analogMin, RobotConstants.bR_analogMax, RobotConstants.bR_analogReverse);
         pod.setServoCachingThreshold(RobotConstants.driveServoCaching); return pod;
     }
 
