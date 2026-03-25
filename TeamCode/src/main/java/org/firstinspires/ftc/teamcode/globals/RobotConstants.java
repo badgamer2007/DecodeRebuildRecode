@@ -1,9 +1,11 @@
 package org.firstinspires.ftc.teamcode.globals;
 
+import com.bylazar.configurables.annotations.Configurable;
 import com.pedropathing.geometry.Pose;
 import com.pedropathing.control.PIDFCoefficients;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
+@Configurable
 public class RobotConstants {
 
     public enum RobotTeam {
@@ -30,24 +32,24 @@ public class RobotConstants {
     public static String fR_motorName = "fr_motor";
     public static String fR_servoName = "fr_rotation";
     public static String fR_encoderName = "fr_absolute";
-    public static double fR_offset = 4.22;
-    public static double fR_analogMin = 0.0;
-    public static double fR_analogMax = 3.3;
-    public static DcMotorSimple.Direction fR_servoDirection = DcMotorSimple.Direction.REVERSE;
-    public static DcMotorSimple.Direction fR_motorDirection = DcMotorSimple.Direction.FORWARD;
-    public static boolean fR_analogReverse = false;
+    public static double fR_offset = 1.38;
+    public static double fR_analogMin = 0.001;
+    public static double fR_analogMax = 3.2140;
+    public static DcMotorSimple.Direction fR_servoDirection = DcMotorSimple.Direction.FORWARD;
+    public static DcMotorSimple.Direction fR_motorDirection = DcMotorSimple.Direction.REVERSE;
+    public static boolean fR_analogReverse = true;
     public static PIDFCoefficients fR_PID = new PIDFCoefficients(0.6, 0, 0.02, 0);
 
     // Back Right Swerve
     public static String bR_motorName = "br_motor";
     public static String bR_servoName = "br_rotation";
     public static String bR_encoderName = "br_absolute";
-    public static double bR_offset = 6.01;
-    public static double bR_analogMin = 0.0;
-    public static double bR_analogMax = 3.3;
-    public static DcMotorSimple.Direction bR_servoDirection = DcMotorSimple.Direction.REVERSE;
-    public static DcMotorSimple.Direction bR_motorDirection = DcMotorSimple.Direction.FORWARD;
-    public static boolean bR_analogReverse = false;
+    public static double bR_offset = 2.98;
+    public static double bR_analogMin = 0.0060;
+    public static double bR_analogMax = 3.2230;
+    public static DcMotorSimple.Direction bR_servoDirection = DcMotorSimple.Direction.FORWARD;
+    public static DcMotorSimple.Direction bR_motorDirection = DcMotorSimple.Direction.REVERSE;
+    public static boolean bR_analogReverse = true;
     public static PIDFCoefficients bR_PID = new PIDFCoefficients(0.3, 0, 0.02, 0);
 
     // Back Left Swerve
@@ -55,22 +57,22 @@ public class RobotConstants {
     public static String bL_servoName = "bl_rotation";
     public static String bL_encoderName = "bl_absolute";
     public static double bL_offset = 1.47;
-    public static double bL_analogMin = 0.0;
-    public static double bL_analogMax = 3.3;
-    public static DcMotorSimple.Direction bL_servoDirection = DcMotorSimple.Direction.REVERSE;
-    public static DcMotorSimple.Direction bL_motorDirection = DcMotorSimple.Direction.FORWARD;
-    public static boolean bL_analogReverse = false;
+    public static double bL_analogMin = 0.0010;
+    public static double bL_analogMax = 3.2160;
+    public static DcMotorSimple.Direction bL_servoDirection = DcMotorSimple.Direction.FORWARD;
+    public static DcMotorSimple.Direction bL_motorDirection = DcMotorSimple.Direction.REVERSE;
+    public static boolean bL_analogReverse = true;
     public static PIDFCoefficients bL_PID = new PIDFCoefficients(0.6, 0, 0.02, 0);
 
     // Front Left Swerve
     public static String fL_motorName = "fl_motor";
     public static String fL_servoName = "fl_rotation";
     public static String fL_encoderName = "fl_absolute";
-    public static double fL_offset = 6.12;
-    public static double fL_analogMin = 0.0;
-    public static double fL_analogMax = 3.3;
-    public static DcMotorSimple.Direction fL_servoDirection = DcMotorSimple.Direction.REVERSE;
-    public static DcMotorSimple.Direction fL_motorDirection = DcMotorSimple.Direction.FORWARD;
-    public static boolean fL_analogReverse = false;
+    public static double fL_offset = 5.70;
+    public static double fL_analogMin = 0.0010;
+    public static double fL_analogMax = 3.1960;
+    public static DcMotorSimple.Direction fL_servoDirection = DcMotorSimple.Direction.FORWARD;
+    public static DcMotorSimple.Direction fL_motorDirection = DcMotorSimple.Direction.REVERSE;
+    public static boolean fL_analogReverse = true;
     public static PIDFCoefficients fL_PID = new PIDFCoefficients(0.6, 0, 0.02, 0);
 }
